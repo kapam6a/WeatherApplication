@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15E65" minimumToolsVersion="Automatic">
+    <entity name="City" representedClassName="City" syncable="YES">
+        <attribute name="cacheDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="days" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Day" inverseName="city" inverseEntity="Day" syncable="YES"/>
+        <relationship name="information" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Information" inverseName="city" inverseEntity="Information" syncable="YES"/>
+    </entity>
+    <entity name="Day" representedClassName="Day" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dayTemperature" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nightTepmperature" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="City" inverseName="days" inverseEntity="City" syncable="YES"/>
+    </entity>
+    <entity name="Information" representedClassName="Information" syncable="YES">
+        <attribute name="cacheDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="descriptionOfWeather" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="humidity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pressure" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="windSpeed" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="city" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="City" inverseName="information" inverseEntity="City" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="City" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Information" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Day" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
