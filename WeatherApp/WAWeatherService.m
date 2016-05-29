@@ -13,7 +13,7 @@
 #import "City.h"
 #import "Day.h"
 
-const NSInteger WAStoreTimeWeatherService = 604800;
+const NSInteger WAStoreTimeWeatherService = 86400;
 
 @implementation WAWeatherService
 
