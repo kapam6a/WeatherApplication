@@ -10,6 +10,6 @@
 
 @protocol WASelectionModuleOutput <NSObject>
 
--(void)getData:(NSString*)data;
+-(void)getData:(id)data;
 
 @end

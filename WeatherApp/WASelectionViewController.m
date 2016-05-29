@@ -8,9 +8,8 @@
 
 #import "WASelectionViewController.h"
 
-@interface WASelectionViewController ()
-
-@end
+static NSString *const WAAlertControllerTitleSelectionViewController = @"Wrong input!";
+static NSString *const WAAlertControllerActionTitleSelectionViewController = @"OK";
 
 @implementation WASelectionViewController
 
@@ -36,6 +35,19 @@
 -(void)dismissYourself
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - WASelectionRouterInput
+
+-(void)showAlertWindowWithMessage:(NSString *)message
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:WAAlertControllerTitleSelectionViewController
+                                                                             message:message
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    [alertController addAction:[UIAlertAction actionWithTitle:WAAlertControllerActionTitleSelectionViewController
+                                                        style:UIAlertActionStyleCancel
+                                                      handler:nil]];
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 @end

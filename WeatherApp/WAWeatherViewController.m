@@ -9,7 +9,7 @@
 #import "WAWeatherViewController.h"
 #import "UIViewController+DataProperty.h"
 #import "WACityPonso.h"
-#import "WADayPosno.h"
+#import "WADayPonso.h"
 #import "WAWeatherDataDisplayManager.h"
 
 static NSString *const WAAlertControllerTitleWeatherViewController = @"Failure connection!";
@@ -41,16 +41,14 @@ static NSString *const WAAlertControllerActionTitleWeatherViewController = @"OK"
                                                          preferredStyle:UIAlertControllerStyleAlert];
     [alertController addAction:[UIAlertAction actionWithTitle:WAAlertControllerActionTitleWeatherViewController
                                                         style:UIAlertActionStyleCancel
-                                                      handler:^(UIAlertAction *action) {
-                                                          [self dismissViewControllerAnimated:YES completion:nil];
-                                                      }]];
+                                                      handler:nil]];
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
 -(void)showDataWith:(WACityPonso*)city;
 {
-    [self.nameOfCity setTitle:city.name forState:UIControlStateNormal];
-    WADayPosno *day = city.days[0];
+    [self.nameOfCityButton setTitle:city.name forState:UIControlStateNormal];
+    WADayPonso *day = city.days[0];
     self.temperatureLabel.text = day.dayTemperature;
     [self.displayManager reloadTableViewInformationWithData:city];
     [self.tableView reloadData];
@@ -63,9 +61,15 @@ static NSString *const WAAlertControllerActionTitleWeatherViewController = @"OK"
     [self.presenter didSelectNameOfCityButton:sender];
 }
 
-- (IBAction)editButtonAction:(id)sender
+- (IBAction)searchButtonAction:(id)sender
 {
-    [self.presenter didSelectEditButton:sender];
+    [self.presenter didSelectSearchButton];
+}
+
+- (IBAction)defaultCitiesSegmentedControlAction:(UISegmentedControl*)sender
+{
+    NSString *nameOfSelectSegment = [sender titleForSegmentAtIndex:sender.selectedSegmentIndex];
+    [self.presenter didSelectDefaultCititesSegmentedControl:nameOfSelectSegment];
 }
 
 #pragma mark - WAWeatherRouterOutput

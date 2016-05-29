@@ -22,7 +22,7 @@ static NSString *const WASegueIdForSelectionViewControllerIdentifierWeatherRoute
     [self.view openNewModuleWithSegueID:WASegueIdForInformationViewControllerIdentifierWeatherRouter withData:data];
 }
 
--(void)didSelectEditButton:(id)sender
+-(void)didSelectSearchButton
 {
     [self.view openNewModuleWithSegueID:WASegueIdForSelectionViewControllerIdentifierWeatherRouter withData:nil];
 }

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface WADayPosno : NSObject
+@interface WADayPonso : NSObject
 
 @property (nullable, nonatomic, retain) NSString *nightTepmperature;
 @property (nullable, nonatomic, retain) NSString *dayTemperature;

@@ -10,6 +10,8 @@
 
 @protocol WASelectionViewInput <NSObject>
 
+-(void)showAlertWindowWithMessage:(NSString*)message;
+
 @end
 
 @protocol WASelectionViewOutput <NSObject>

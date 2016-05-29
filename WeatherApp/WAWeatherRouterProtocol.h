@@ -11,7 +11,7 @@
 @protocol WAWeatherRouterInput <NSObject>
 
 -(void)didSelectNameOfCityButton:(id)sender;
--(void)didSelectEditButton:(id)sender;
+-(void)didSelectSearchButton;
 
 @end
 

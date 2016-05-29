@@ -14,10 +14,11 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *temperatureLabel;
-@property (weak, nonatomic) IBOutlet UIButton *nameOfCity;
+@property (weak, nonatomic) IBOutlet UIButton *nameOfCityButton;
 
 - (IBAction)nameOfCityButtonAction:(id)sender;
-- (IBAction)editButtonAction:(id)sender;
+- (IBAction)searchButtonAction:(id)sender;
+- (IBAction)defaultCitiesSegmentedControlAction:(id)sender;
 
 @property (strong, nonatomic) id<WAWeatherViewOutput> presenter;
 

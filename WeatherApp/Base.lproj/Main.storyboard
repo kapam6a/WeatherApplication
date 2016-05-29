@@ -143,7 +143,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humidity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ao-lS-hpy">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ao-lS-hpy">
                                 <rect key="frame" x="180" y="100" width="120" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="ws6-VE-yXF"/>
@@ -152,31 +152,31 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pressure" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrE-QM-xu9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrE-QM-xu9">
                                 <rect key="frame" x="180" y="130" width="120" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwR-oH-is5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwR-oH-is5">
                                 <rect key="frame" x="180" y="160" width="120" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitude" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxp-d6-csA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xxp-d6-csA">
                                 <rect key="frame" x="180" y="190" width="120" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kx-r9-tV3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Kx-r9-tV3">
                                 <rect key="frame" x="180" y="220" width="120" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wind's speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDZ-Lx-VTi">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDZ-Lx-VTi">
                                 <rect key="frame" x="180" y="250" width="120" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -266,33 +266,52 @@
                                     <constraint firstAttribute="width" constant="300" id="4cU-6f-zaI"/>
                                     <constraint firstAttribute="height" constant="50" id="BIA-ma-YU1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <connections>
                                     <action selector="nameOfCityButtonAction:" destination="x8T-ma-nEr" eventType="touchUpInside" id="ZH2-iY-PBM"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PCR-BZ-2oo">
+                                <rect key="frame" x="150" y="90" width="300" height="29"/>
+                                <segments>
+                                    <segment title="Moscow"/>
+                                    <segment title="Saint-Petersburg"/>
+                                </segments>
+                                <connections>
+                                    <action selector="defaultCitiesSegmentedControlAction:" destination="x8T-ma-nEr" eventType="valueChanged" id="lcA-fF-x4R"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NPI-uM-ify" firstAttribute="top" secondItem="2px-DY-d7s" secondAttribute="bottom" constant="76" id="5kC-nE-VUh"/>
                             <constraint firstItem="WHb-gq-Vse" firstAttribute="centerX" secondItem="NPI-uM-ify" secondAttribute="centerX" id="Pbm-Qz-U6Y"/>
                             <constraint firstItem="WHb-gq-Vse" firstAttribute="leading" secondItem="5G0-UQ-LkC" secondAttribute="leading" id="Qg7-Nc-CSm"/>
+                            <constraint firstItem="NPI-uM-ify" firstAttribute="top" secondItem="PCR-BZ-2oo" secondAttribute="bottom" constant="22" id="QgS-aJ-gTm"/>
+                            <constraint firstItem="PCR-BZ-2oo" firstAttribute="leading" secondItem="NPI-uM-ify" secondAttribute="leading" id="Vqw-u2-ioj"/>
                             <constraint firstItem="hGx-YB-dec" firstAttribute="top" secondItem="NPI-uM-ify" secondAttribute="bottom" constant="40" id="YcM-Tw-01s"/>
                             <constraint firstItem="WHb-gq-Vse" firstAttribute="bottom" secondItem="Ovr-75-lb2" secondAttribute="top" id="eIi-My-dfH"/>
+                            <constraint firstItem="NPI-uM-ify" firstAttribute="top" secondItem="PCR-BZ-2oo" secondAttribute="bottom" constant="23" id="gVp-EK-gfr"/>
+                            <constraint firstItem="PCR-BZ-2oo" firstAttribute="trailing" secondItem="NPI-uM-ify" secondAttribute="trailing" id="h14-eJ-Tjs"/>
                             <constraint firstItem="hGx-YB-dec" firstAttribute="centerX" secondItem="NPI-uM-ify" secondAttribute="centerX" id="o3R-tS-BQf"/>
                             <constraint firstAttribute="trailing" secondItem="WHb-gq-Vse" secondAttribute="trailing" id="vM3-3s-Q8W"/>
                             <constraint firstItem="WHb-gq-Vse" firstAttribute="top" secondItem="hGx-YB-dec" secondAttribute="bottom" constant="10" id="y5Z-tv-eCa"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gVp-EK-gfr"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="qh3-0p-izC">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="w1W-UY-uIi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="w1W-UY-uIi">
                             <connections>
-                                <action selector="editButtonAction:" destination="x8T-ma-nEr" id="5Qq-Yr-ln6"/>
+                                <action selector="searchButtonAction:" destination="x8T-ma-nEr" id="rQi-ef-74C"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="nameOfCity" destination="NPI-uM-ify" id="lbM-JE-qzm"/>
+                        <outlet property="nameOfCityButton" destination="NPI-uM-ify" id="hyc-RF-KT3"/>
                         <outlet property="tableView" destination="WHb-gq-Vse" id="fcs-25-HLW"/>
                         <outlet property="temperatureLabel" destination="hGx-YB-dec" id="xiy-kA-vXr"/>
                         <segue destination="d1h-Mf-ceZ" kind="presentation" identifier="WASelectionViewControllerIdentifier" id="FLa-CJ-xxd"/>

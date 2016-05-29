@@ -19,6 +19,7 @@
 
 -(void)uploadView;
 -(void)didSelectNameOfCityButton:(id)sender;
--(void)didSelectEditButton:(id)sender;
+-(void)didSelectSearchButton;
+-(void)didSelectDefaultCititesSegmentedControl:(id)data;
 
 @end

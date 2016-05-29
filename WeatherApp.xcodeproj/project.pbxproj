@@ -30,7 +30,7 @@
 		C00FAFE51CF9728D0063C236 /* City+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C00FAFE21CF9728D0063C236 /* City+CoreDataProperties.m */; };
 		C00FAFE61CF9728D0063C236 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = C00FAFE41CF9728D0063C236 /* City.m */; };
 		C00FAFEA1CFA14060063C236 /* WACityPonso.m in Sources */ = {isa = PBXBuildFile; fileRef = C00FAFE91CFA14060063C236 /* WACityPonso.m */; };
-		C00FAFED1CFA14160063C236 /* WADayPosno.m in Sources */ = {isa = PBXBuildFile; fileRef = C00FAFEC1CFA14160063C236 /* WADayPosno.m */; };
+		C00FAFED1CFA14160063C236 /* WADayPonso.m in Sources */ = {isa = PBXBuildFile; fileRef = C00FAFEC1CFA14160063C236 /* WADayPonso.m */; };
 		C00FAFF01CFA15560063C236 /* WAPonsoGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C00FAFEF1CFA15560063C236 /* WAPonsoGenerator.m */; };
 		C00FAFF41CFA263E0063C236 /* WAInformationPonso.m in Sources */ = {isa = PBXBuildFile; fileRef = C00FAFF31CFA263D0063C236 /* WAInformationPonso.m */; };
 		C00FB0011CFA47200063C236 /* WAWeatherDataDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C00FB0001CFA47200063C236 /* WAWeatherDataDisplayManager.m */; };
@@ -102,8 +102,8 @@
 		C00FAFE41CF9728D0063C236 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
 		C00FAFE81CFA14060063C236 /* WACityPonso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WACityPonso.h; sourceTree = "<group>"; };
 		C00FAFE91CFA14060063C236 /* WACityPonso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WACityPonso.m; sourceTree = "<group>"; };
-		C00FAFEB1CFA14160063C236 /* WADayPosno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADayPosno.h; sourceTree = "<group>"; };
-		C00FAFEC1CFA14160063C236 /* WADayPosno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADayPosno.m; sourceTree = "<group>"; };
+		C00FAFEB1CFA14160063C236 /* WADayPonso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WADayPonso.h; sourceTree = "<group>"; };
+		C00FAFEC1CFA14160063C236 /* WADayPonso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WADayPonso.m; sourceTree = "<group>"; };
 		C00FAFEE1CFA15560063C236 /* WAPonsoGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAPonsoGenerator.h; sourceTree = "<group>"; };
 		C00FAFEF1CFA15560063C236 /* WAPonsoGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WAPonsoGenerator.m; sourceTree = "<group>"; };
 		C00FAFF21CFA263D0063C236 /* WAInformationPonso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WAInformationPonso.h; sourceTree = "<group>"; };
@@ -277,8 +277,8 @@
 			children = (
 				C00FAFE81CFA14060063C236 /* WACityPonso.h */,
 				C00FAFE91CFA14060063C236 /* WACityPonso.m */,
-				C00FAFEB1CFA14160063C236 /* WADayPosno.h */,
-				C00FAFEC1CFA14160063C236 /* WADayPosno.m */,
+				C00FAFEB1CFA14160063C236 /* WADayPonso.h */,
+				C00FAFEC1CFA14160063C236 /* WADayPonso.m */,
 				C00FAFF21CFA263D0063C236 /* WAInformationPonso.h */,
 				C00FAFF31CFA263D0063C236 /* WAInformationPonso.m */,
 			);
@@ -506,7 +506,7 @@
 			files = (
 				C00FAFE51CF9728D0063C236 /* City+CoreDataProperties.m in Sources */,
 				C00FAFDF1CF972220063C236 /* Information+CoreDataProperties.m in Sources */,
-				C00FAFED1CFA14160063C236 /* WADayPosno.m in Sources */,
+				C00FAFED1CFA14160063C236 /* WADayPonso.m in Sources */,
 				C0416B9B1CF7146800E522E8 /* WAWeatherViewController.m in Sources */,
 				C0416BA21CF71AEA00E522E8 /* WAWeatherPresenter.m in Sources */,
 				C0EEF9571CF7074100CDCB7F /* WeatherApp.xcdatamodeld in Sources */,

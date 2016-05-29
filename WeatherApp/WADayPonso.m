@@ -6,8 +6,8 @@
 //  Copyright © 2016 Kapam6a. All rights reserved.
 //
 
-#import "WADayPosno.h"
+#import "WADayPonso.h"
 
-@implementation WADayPosno
+@implementation WADayPonso
 
 @end

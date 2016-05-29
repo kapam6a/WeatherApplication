@@ -22,9 +22,14 @@
     [self.router didSelectNameOfCityButton:sender];
 }
 
--(void)didSelectEditButton:(id)sender
+-(void)didSelectSearchButton
 {
-    [self.router didSelectEditButton:sender];
+    [self.router didSelectSearchButton];
+}
+
+-(void)didSelectDefaultCititesSegmentedControl:(id)data
+{
+    [self.interactor getDataWith:data];
 }
 
 #pragma mark -  WAWeatherInteractorOutput
@@ -41,7 +46,7 @@
 
 #pragma mark - WASelectionModuleOutput
 
--(void)getData:(NSString *)data
+-(void)getData:(id)data
 {
     [self.interactor getDataWith:data];
 }

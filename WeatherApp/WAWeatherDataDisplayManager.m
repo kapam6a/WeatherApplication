@@ -8,7 +8,7 @@
 
 #import "WAWeatherDataDisplayManager.h"
 #import "WACityPonso.h"
-#import "WADayPosno.h"
+#import "WADayPonso.h"
 
 static NSString *const WACellIdentifierWeatherViewControllerDataDisplayManager = @"WACellIdentifierWeatherViewControllerDataDisplayManager";
 static NSString *const WADateFormatDataDisplayManager = @"MMM dd";
@@ -46,7 +46,7 @@ static NSString *const WADateFormatDataDisplayManager = @"MMM dd";
 -(NSString*)textForCell:(NSInteger)index
 {
     NSArray *days = self.city.days;
-    WADayPosno *day = days[index];
+    WADayPonso *day = days[index];
     NSDate *date = day.date;
     
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];

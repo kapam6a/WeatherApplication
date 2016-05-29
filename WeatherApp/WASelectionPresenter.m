@@ -8,14 +8,21 @@
 
 #import "WASelectionPresenter.h"
 
+static NSString *const WAMessageWithEmptyTextFieldPresenter = @"Enter city name";
+
 @implementation WASelectionPresenter
 
 #pragma mark - WASelectionViewOutput
 
--(void)didSelectDoneButtonWithData:(NSString *)data
+-(void)didSelectDoneButtonWithData:(NSString*)data
 {
-    [self.router didSelectDoneButton];
-    [self.sourcePresenter getData:data];
+    if (data.length != 0) {
+        [self.router didSelectDoneButton];
+        [self.sourcePresenter getData:data];
+
+    } else {
+        [self.view showAlertWindowWithMessage:WAMessageWithEmptyTextFieldPresenter];
+    }
 }
 
 -(void)didSelectCancelButton

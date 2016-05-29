@@ -11,7 +11,7 @@
 @protocol WAWeatherInteractorInput <NSObject>
 
 -(void)getDefaultData;
--(void)getDataWith:(NSString*)data;
+-(void)getDataWith:(id)data;
 
 @end
 

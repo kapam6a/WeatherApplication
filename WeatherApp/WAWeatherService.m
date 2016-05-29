@@ -25,9 +25,9 @@ const NSInteger WAStoreTimeWeatherService = 86400;
     City *city = [coreDataRequest fetchCity:cityName];
         
     NSDate *cacheDate = city.cacheDate;
-    NSTimeInterval timeIntervalFromLastTimeCashing = -(cacheDate.timeIntervalSinceNow);
+    NSTimeInterval timeIntervalSinceLastTimeCashing = -(cacheDate.timeIntervalSinceNow);
         
-    if(timeIntervalFromLastTimeCashing > WAStoreTimeWeatherService || city == nil){
+    if(timeIntervalSinceLastTimeCashing > WAStoreTimeWeatherService || city == nil){
             
     WAParser *parser = [WAParser new];
     WARemoteRequest *remoteRequest = [WARemoteRequest new];

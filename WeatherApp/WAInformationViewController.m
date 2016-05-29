@@ -42,9 +42,7 @@ static NSString *const WAAlertControllerActionTitleInformationViewController = @
                                                          preferredStyle:UIAlertControllerStyleAlert];
     [ac addAction:[UIAlertAction actionWithTitle:WAAlertControllerActionTitleInformationViewController
                                            style:UIAlertActionStyleCancel
-                                         handler:^(UIAlertAction *action) {
-                                             [self dismissViewControllerAnimated:YES completion:nil];
-                                         }]];
+                                         handler:nil]];
     [self presentViewController:ac animated:YES completion:nil];
 }
 

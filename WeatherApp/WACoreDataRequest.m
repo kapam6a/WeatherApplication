@@ -12,7 +12,6 @@
 #import "Information.h"
 
 static NSString *const WANameCityEntityCoreDataRequest = @"City";
-static NSString *const WAPredicateFormatForCityEntityCoreDataRequest = @"self.name=";
 
 @implementation WACoreDataRequest
 
@@ -23,7 +22,7 @@ static NSString *const WAPredicateFormatForCityEntityCoreDataRequest = @"self.na
     NSFetchRequest *fetch = [NSFetchRequest new];
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:WANameCityEntityCoreDataRequest  inManagedObjectContext: context];
     [fetch setEntity:entityDescription];
-    [fetch setPredicate:[NSPredicate predicateWithFormat:@"%@=%@", WAPredicateFormatForCityEntityCoreDataRequest, cityName]];
+    [fetch setPredicate:[NSPredicate predicateWithFormat:@"self.name=%@", cityName]];
     NSError * error = nil;
     NSArray *fetchedObjects = [context executeFetchRequest:fetch error:&error];
     if (fetchedObjects.count !=0) {
@@ -48,7 +47,8 @@ static NSString *const WAPredicateFormatForCityEntityCoreDataRequest = @"self.na
 
 -(Information*)fetchInformation:(NSString*)cityName
 {
-    Information *information = [self fetchCity:cityName].information;
+    City *city = [self fetchCity:cityName];
+    Information *information = city.information;
     return information;
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "WAPonsoGenerator.h"
-#import "WADayPosno.h"
+#import "WADayPonso.h"
 #import "WACityPonso.h"
 #import "WAInformationPonso.h"
 #import "City.h"
@@ -18,9 +18,9 @@ static NSString *const WAKeyForSortDiscriptorPonsoGenerator = @"date";
 
 @implementation WAPonsoGenerator
 
--(WADayPosno*)convertCoreDataDay:(Day*)day
+-(WADayPonso*)convertCoreDataDay:(Day*)day
 {
-    WADayPosno *dayPonso = [WADayPosno new];
+    WADayPonso *dayPonso = [WADayPonso new];
     dayPonso.date = day.date;
     dayPonso.dayTemperature = day.dayTemperature;
     dayPonso.nightTepmperature = day.nightTepmperature;
@@ -39,7 +39,7 @@ static NSString *const WAKeyForSortDiscriptorPonsoGenerator = @"date";
 {
     NSMutableArray *daysArray = [NSMutableArray new];
     for(Day *day in days.allObjects){
-        WADayPosno *dayPonso = [self convertCoreDataDay:day];
+        WADayPonso *dayPonso = [self convertCoreDataDay:day];
         [daysArray addObject:dayPonso];
     }
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:WAKeyForSortDiscriptorPonsoGenerator ascending:YES];
